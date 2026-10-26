@@ -1,4 +1,5 @@
 import "./App.css";
+import chef from "./images/chef.jpg";
 import { useState } from 'react'
 
 function Header({ name, year }) {
@@ -23,6 +24,9 @@ const dishObjects = items.map((dish,i) => ({
 function Main({dishes}) {
   return (
     <div>
+       <img src=" https://github.com/Sangyae.png "       
+      height={200} 
+      alt ="A photo at Tower Bridge" /> {/*we can get github image with this one. */}
       <h2>We server the most delecious around here.✌️</h2>
       <ul>{dishes.map((dish) => (<li key={dish.id} style={{listStyleType:"none"}}>
         {dish.title}</li>))}
